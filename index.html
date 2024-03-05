@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Muhammad Hammad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura"
+      rel="stylesheet"
+    />
+
+    <link href="common-css/bootstrap.css" rel="stylesheet" />
+    <link href="common-css/ionicons.css" rel="stylesheet" />
+    <link href="common-css/fluidbox.min.css" rel="stylesheet" />
+    <link href="01-cv-portfolio/css/styles.css" rel="stylesheet" />
+    <link href="01-cv-portfolio/css/responsive.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script nonce="d0208871-26c6-40e3-a416-b10236ddc037">
+      try {
+        (function (w, d) {
+          !(function (ct, cu, cv, cw) {
+            ct[cv] = ct[cv] || {};
+            ct[cv].executed = [];
+            ct.zaraz = { deferred: [], listeners: [] };
+            ct.zaraz.q = [];
+            ct.zaraz._f = function (cx) {
+              return async function () {
+                var cy = Array.prototype.slice.call(arguments);
+                ct.zaraz.q.push({ m: cx, a: cy });
+              };
+            };
+            for (const cz of ["track", "set", "debug"])
+              ct.zaraz[cz] = ct.zaraz._f(cz);
+            ct.zaraz.init = () => {
+              var cA = cu.getElementsByTagName(cw)[0],
+                cB = cu.createElement(cw),
+                cC = cu.getElementsByTagName("title")[0];
+              cC && (ct[cv].t = cu.getElementsByTagName("title")[0].text);
+              ct[cv].x = Math.random();
+              ct[cv].w = ct.screen.width;
+              ct[cv].h = ct.screen.height;
+              ct[cv].j = ct.innerHeight;
+              ct[cv].e = ct.innerWidth;
+              ct[cv].l = ct.location.href;
+              ct[cv].r = cu.referrer;
+              ct[cv].k = ct.screen.colorDepth;
+              ct[cv].n = cu.characterSet;
+              ct[cv].o = new Date().getTimezoneOffset();
+              if (ct.dataLayer)
+                for (const cG of Object.entries(
+                  Object.entries(dataLayer).reduce(
+                    (cH, cI) => ({ ...cH[1], ...cI[1] }),
+                    {}
+                  )
+                ))
+                  zaraz.set(cG[0], cG[1], { scope: "page" });
+              ct[cv].q = [];
+              for (; ct.zaraz.q.length; ) {
+                const cJ = ct.zaraz.q.shift();
+                ct[cv].q.push(cJ);
+              }
+              cB.defer = !0;
+              for (const cK of [localStorage, sessionStorage])
+                Object.keys(cK || {})
+                  .filter((cM) => cM.startsWith("_zaraz_"))
+                  .forEach((cL) => {
+                    try {
+                      ct[cv]["z_" + cL.slice(7)] = JSON.parse(cK.getItem(cL));
+                    } catch {
+                      ct[cv]["z_" + cL.slice(7)] = cK.getItem(cL);
+                    }
+                  });
+              cB.referrerPolicy = "origin";
+              cB.src =
+                "../../cdn-cgi/zaraz/sd0d9.js?z=" +
+                btoa(encodeURIComponent(JSON.stringify(ct[cv])));
+              cA.parentNode.insertBefore(cB, cA);
+            };
+            ["complete", "interactive"].includes(cu.readyState)
+              ? zaraz.init()
+              : ct.addEventListener("DOMContentLoaded", zaraz.init);
+          })(w, d, "zarazData", "script");
+        })(window, document);
+      } catch (e) {
+        throw (fetch("/cdn-cgi/zaraz/t"), e);
+      }
+    </script>
+    <style>
+      .video-section {
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: #02083d;
+        color: white;
+      }
+
+      .video-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+      }
+
+      .intro-section {
+        transform: translate(0, -10%);
+      }
+
+      .intro-button {
+        display: block;
+        margin: 20px auto; /* Center the button */
+        padding: 10px 20px;
+        background-color: #4caf50; /* Green background color */
+        color: white; /* White text color */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Add border radius */
+        cursor: pointer; /* Add cursor pointer on hover */
+        transform: translate(-8%, 0);
+      }
+
+      .intro-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+
+      .download-button {
+        text-align: center;
+        margin-top: 20px; /* Adjust the margin as needed */
+      }
+
+      .btn-primary {
+        /* Add your button styles here */
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        transform: translate(-8%, 0);
+        border-radius: 5px;
+      }
+
+      .btn-primary:hover {
+        background-color: #217dbb;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1 col-lg-2"></div>
+          <div class="col-md-10 col-lg-8">
+            <div class="intro">
+              <div class="profile-img">
+                <img src="images/profile.jpeg" alt />
+              </div>
+              <h2><b>Muhammad Hammad</b></h2>
+              <h4 class="font-yellow">Software Developer</h4>
+              <ul class="information margin-tb-30">
+                <li><b>BORN : </b>September 12, 2002</li>
+                <li>
+                  <b>EMAIL : </b>
+                  <a
+                    style="text-decoration: none"
+                    href="mailto:hammadmalikdx@gmail.com?subject=Subject%20of%20the%20email&body=Body%20of%20the%20email"
+                  >
+                    hammadmalikdx@gmail.com
+                  </a>
+                </li>
+                <div class="download-button">
+                  <a href="path/to/your/cv.pdf" download class="btn btn-primary"
+                    >Download CV</a
+                  >
+                </div>
+              </ul>
+              <ul class="social-icons">
+                <li>
+                  <a href="#"><i class="ion-social-pinterest"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ion-social-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ion-social-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ion-social-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="ion-social-twitter"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container video-section">
+      <div class="row justify-content-center align-items-center">
+        <div class="heading">
+          <h3 style="text-align: center; margin-top: 30px">
+            <b>MY PROJECTS</b>
+            <br />
+            <br />
+          </h3>
+        </div>
+
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/p6aVxl1s7UI"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">Raston Realm</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              Presenting Raston Realms: A state-of-the-art tourism web app
+              developed with .NET Core and SQL Server, ensuring smooth client
+              interactions and streamlined admin operations for an enhanced
+              travel business experience.
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/vlCnRo7-6FE"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">HoneyBee Haven</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              Honeybee Haven: A Spring Boot marketplace powered by MySQL
+              connecting agricultural sellers and buyers, featuring messaging,
+              reporting, and money transfer API along with all traditional
+              marketplace features.
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/VbooJ4jFbtA"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">Football Club System</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              Football Club Management System: Utilizing .NET Core and SQL
+              Server, it features a client interface for stats and schedules
+              viewing, alongside analyst and executive interfaces for efficient
+              club management.
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/6uI9pQ1VH6Y"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">Gear-Grit</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              Gear-Grit: A Unity 3D game with challenging obstacle courses for
+              cycling and an open-world mode set in a cool city with unique
+              challenges, including unexpected encounters with bears.
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/LEjXUA0KWEY"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">Snake 3d</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              Snake 3D: A Unity 3D game offering a twist on the classic snake
+              game, navigating a circular world with simulated gravity,
+              exploring 360 degrees, and featuring power-ups/downs—just avoid
+              crashing into yourself!
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/aqWXmd8Yrxs"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">You Are Dead</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              "You Are Dead": A Unity 3D 3rd person shooter with the goal of
+              eliminating all enemies before they get you, featuring significant
+              use of animation rigging.
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/hba4Ytnv3hQ"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">Survive</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              A visually stunning first-person shooter themed survival game made
+              in unity, the main dangers are cannibals and boars, and they can
+              be shot down using a variety of different weapons. Let's see how
+              long you can survive.
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/fFW_rDtsoCg"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">Cook'em</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              "Cook'em": My first 3D Unity game—laid-back kitchen fun with five
+              recipes. Explored navigation, cameras, UI, and the new Unity Input
+              System, making it a cool journey into learning and play!
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/v8-KgZZKXqw"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">Pluck'It</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              Solo air hockey project highlighting Unity 2D physics expertise,
+              with engaging gameplay and a scripted AI for the opposing puck,
+              demonstrating proficiency in crafting dynamic gaming experiences.
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/SUut1FCruwk"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">BirdSmashers</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              Birdsmashers: A Unity 2D game reminiscent of the classic Angry
+              Birds, featuring animated 2D art and an aesthetically pleasing UI.
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/Tyjb3tohrH0"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">FootPong</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              Footpong: A Unity 2D game blending physics and collisions,
+              offering a unique twist as a 2-player ping pong game with a
+              football.
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="video-card">
+            <iframe
+              src="https://www.youtube.com/embed/s82N1eefn6o"
+              frameborder="0"
+              allowfullscreen
+            ></iframe>
+            <h3 style="text-align: center">Assembly Fish Game</h3>
+            <p style="text-align: center; color: white; font-size: smaller">
+              Dive into Assembly 8088 with a fish game showcasing low-level
+              programming skills—optimized video memory, dynamic user input, and
+              unique background music via software interrupts.
+            </p>
+            <p>___________________________________________</p>
+          </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Repeat the structure for additional videos -->
+      </div>
+    </div>
+
+    <section class="about-section section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="heading">
+              <h3><b>About me</b></h3>
+              <h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <p class="margin-b-50">
+              I possess a diverse skill set encompassing Unity game development
+              with expertise in C# and .NET Core, showcasing a strong foundation
+              in crafting immersive gaming experiences. Additionally, I have a
+              basic understanding of Spring Boot, and I am adept at developing
+              console applications. My programming repertoire includes C++, C#,
+              Java, JavaScript, Python, and assembly language, reflecting my
+              versatility across a spectrum of languages and technologies. This
+              extensive skill set enables me to navigate various projects
+              seamlessly, contributing to their success with a comprehensive
+              understanding of software development.
+            </p>
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="radial-prog-area margin-b-30">
+                  <div class="radial-progress" data-prog-percent=".90">
+                    <div></div>
+                    <h6 class="progress-title">Problem Solving</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="radial-prog-area margin-b-30">
+                  <div class="radial-progress" data-prog-percent=".75">
+                    <div></div>
+                    <h6 class="progress-title">Web Development</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="radial-prog-area margin-b-30">
+                  <div class="radial-progress" data-prog-percent=".85">
+                    <div></div>
+                    <h6 class="progress-title">Game Development</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="radial-prog-area margin-b-50">
+                  <div class="radial-progress" data-prog-percent=".80">
+                    <div></div>
+                    <h6 class="progress-title">Software Engineering</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experience-section section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="heading">
+              <h3><b>Work Experience</b></h3>
+              <h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="experience margin-b-50">
+              <h4><b>Intern Game Developer</b></h4>
+              <h5 class="font-yellow"><b>VIRTUAL DIVE STUDIOS</b></h5>
+              <h6 class="margin-t-10">JUNE 2023 - AUGUST 2023</h6>
+              <p class="font-semi-white margin-tb-30">
+                In my Unity game development internship, I spearheaded the
+                creation of immersive 3D and 2D games, showcasing expertise in
+                game mechanics and scripting. Collaborating seamlessly with a
+                cross-functional team, I utilized Unity3D and C# to deliver
+                polished gaming experiences. Through adept debugging, I played a
+                key role in overcoming challenges and contributing to the
+                successful development of captivating projects.
+              </p>
+              <ul class="list margin-b-30">
+                <li>Learned core principles of game development.</li>
+                <li>Learned how to build a game from scratch (unity).</li>
+                <li>Familiarized myself with Unity interface.</li>
+                <li>Completed multiple projects.</li>
+                <li>
+                  Achieved certification of successful internship completion.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="education-section section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="heading">
+              <h3><b>Education</b></h3>
+              <h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="education-wrapper">
+              <div class="education margin-b-50">
+                <h4><b>BACHELORS DEGREE IN COMPUTER SCIENCES</b></h4>
+                <h5 class="font-yellow">
+                  <b>FAST NUCES,LAHORE</b>
+                </h5>
+                <h6 class="font-lite-black margin-t-10">
+                  EXPECTED GRADUATION IN 2025
+                </h6>
+                <p class="margin-tb-30">
+                  As a computer science student at FAST-NUCES, I immersed myself
+                  in a dynamic learning environment that fueled my passion for
+                  technology. Engaging in cutting-edge coursework and
+                  collaborative projects, I honed my problem-solving skills,
+                  embraced innovative approaches, and cultivated a solid
+                  foundation for tackling real-world challenges in the
+                  ever-evolving field of computer science.
+                </p>
+              </div>
+              <div class="education margin-b-50">
+                <h4><b>INTERMEDIATE IN SCIENCE(PRE-ENGINEERING)</b></h4>
+                <h5 class="font-yellow">
+                  <b>GOVERNMENT COLLEGE UNIVERSITY,LAHORE</b>
+                </h5>
+                <h6 class="font-lite-black margin-t-10">2019-2021</h6>
+                <p class="margin-tb-30">
+                  During my time as an FSc Pre-Engineering student at the
+                  prestigious Government College University (GCU) Lahore, I was
+                  immersed in the rich academic and cultural heritage that
+                  defines this legendary institution. The intellectually
+                  stimulating environment, coupled with rigorous coursework,
+                  fostered my curiosity and laid the groundwork for a solid
+                  understanding of science and engineering principles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="counter-section" id="counter">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="counter margin-b-30">
+              <h1 class="title">
+                <b
+                  ><span
+                    class="counter-value"
+                    data-duration="400"
+                    data-count="13"
+                    >0</span
+                  ></b
+                >
+              </h1>
+              <h5 class="desc"><b>Certificates</b></h5>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="counter margin-b-30">
+              <h1 class="title">
+                <b
+                  ><span
+                    class="counter-value"
+                    data-duration="1400"
+                    data-count="23"
+                    >0</span
+                  ></b
+                >
+              </h1>
+              <h5 class="desc"><b>Project Completed</b></h5>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="counter margin-b-30">
+              <h1 class="title">
+                <b
+                  ><span
+                    class="counter-value"
+                    data-duration="700"
+                    data-count="84"
+                    >0</span
+                  ></b
+                >
+              </h1>
+              <h5 class="desc"><b>Credit Hours</b></h5>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-3">
+            <div class="counter margin-b-30">
+              <h1 class="title">
+                <b
+                  ><span
+                    class="counter-value"
+                    data-duration="2000"
+                    data-count="7"
+                    >0</span
+                  ></b
+                >
+              </h1>
+              <h5 class="desc"><b>Seminars</b></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="common-js/jquery-3.2.1.min.js"></script>
+    <script src="common-js/tether.min.js"></script>
+    <script src="common-js/bootstrap.js"></script>
+    <script src="common-js/isotope.pkgd.min.js"></script>
+    <script src="common-js/jquery.waypoints.min.js"></script>
+    <script src="common-js/progressbar.min.js"></script>
+    <script src="common-js/jquery.fluidbox.min.js"></script>
+    <script src="common-js/scripts.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+      integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+      data-cf-beacon='{"rayId":"85e24cdcae165f3a","b":1,"version":"2024.2.4","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
