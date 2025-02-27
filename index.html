@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Muhammad Hammad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura"
+      rel="stylesheet"
+    />
+
+    <link href="common-css/bootstrap.css" rel="stylesheet" />
+    <link href="common-css/ionicons.css" rel="stylesheet" />
+    <link href="common-css/fluidbox.min.css" rel="stylesheet" />
+    <link href="01-cv-portfolio/css/styles.css" rel="stylesheet" />
+    <link href="01-cv-portfolio/css/responsive.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script nonce="d0208871-26c6-40e3-a416-b10236ddc037">
+      try {
+        (function (w, d) {
+          !(function (ct, cu, cv, cw) {
+            ct[cv] = ct[cv] || {};
+            ct[cv].executed = [];
+            ct.zaraz = { deferred: [], listeners: [] };
+            ct.zaraz.q = [];
+            ct.zaraz._f = function (cx) {
+              return async function () {
+                var cy = Array.prototype.slice.call(arguments);
+                ct.zaraz.q.push({ m: cx, a: cy });
+              };
+            };
+            for (const cz of ["track", "set", "debug"])
+              ct.zaraz[cz] = ct.zaraz._f(cz);
+            ct.zaraz.init = () => {
+              var cA = cu.getElementsByTagName(cw)[0],
+                cB = cu.createElement(cw),
+                cC = cu.getElementsByTagName("title")[0];
+              cC && (ct[cv].t = cu.getElementsByTagName("title")[0].text);
+              ct[cv].x = Math.random();
+              ct[cv].w = ct.screen.width;
+              ct[cv].h = ct.screen.height;
+              ct[cv].j = ct.innerHeight;
+              ct[cv].e = ct.innerWidth;
+              ct[cv].l = ct.location.href;
+              ct[cv].r = cu.referrer;
+              ct[cv].k = ct.screen.colorDepth;
+              ct[cv].n = cu.characterSet;
+              ct[cv].o = new Date().getTimezoneOffset();
+              if (ct.dataLayer)
+                for (const cG of Object.entries(
+                  Object.entries(dataLayer).reduce(
+                    (cH, cI) => ({ ...cH[1], ...cI[1] }),
+                    {}
+                  )
+                ))
+                  zaraz.set(cG[0], cG[1], { scope: "page" });
+              ct[cv].q = [];
+              for (; ct.zaraz.q.length; ) {
+                const cJ = ct.zaraz.q.shift();
+                ct[cv].q.push(cJ);
+              }
+              cB.defer = !0;
+              for (const cK of [localStorage, sessionStorage])
+                Object.keys(cK || {})
+                  .filter((cM) => cM.startsWith("_zaraz_"))
+                  .forEach((cL) => {
+                    try {
+                      ct[cv]["z_" + cL.slice(7)] = JSON.parse(cK.getItem(cL));
+                    } catch {
+                      ct[cv]["z_" + cL.slice(7)] = cK.getItem(cL);
+                    }
+                  });
+              cB.referrerPolicy = "origin";
+              cB.src =
+                "../../cdn-cgi/zaraz/sd0d9.js?z=" +
+                btoa(encodeURIComponent(JSON.stringify(ct[cv])));
+              cA.parentNode.insertBefore(cB, cA);
+            };
+            ["complete", "interactive"].includes(cu.readyState)
+              ? zaraz.init()
+              : ct.addEventListener("DOMContentLoaded", zaraz.init);
+          })(w, d, "zarazData", "script");
+        })(window, document);
+      } catch (e) {
+        throw (fetch("/cdn-cgi/zaraz/t"), e);
+      }
+    </script>
+    <style>
+      .video-section {
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: #02083d;
+        color: white;
+      }
+      .project-section {
+        background-color: black;
+        width: 100% !important;
+      }
+
+      .video-card {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px;
+      }
+
+      .project-name {
+        color: white;
+        font-weight: 900;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .tech {
+        color: white;
+      }
+      iframe {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+      }
+
+      .intro-section {
+        transform: translate(0, -10%);
+      }
+
+      .intro-button {
+        display: block;
+        margin: 20px auto; /* Center the button */
+        padding: 10px 20px;
+        background-color: #4caf50; /* Green background color */
+        color: white; /* White text color */
+        border: none; /* Remove border */
+        border-radius: 5px; /* Add border radius */
+        cursor: pointer; /* Add cursor pointer on hover */
+        transform: translate(-8%, 0);
+      }
+
+      .intro-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+      }
+
+      .download-button {
+        text-align: center;
+        margin-top: 20px; /* Adjust the margin as needed */
+      }
+
+      .btn-primary {
+        /* Add your button styles here */
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        transform: translate(-8%, 0);
+        border-radius: 5px;
+      }
+
+      .btn-primary:hover {
+        background-color: #217dbb;
+        color: #fff;
+      }
+      .project-card {
+        background: #242424;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3),
+          -5px -5px 15px rgba(255, 255, 255, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1);
+      }
+      .filter-btn {
+        transition: background 0.3s ease, transform 0.2s ease;
+        border-radius: 8px;
+      }
+      .filter-btn:hover {
+        background: orange !important;
+        color: white !important;
+        transform: scale(1.05);
+      }
+      .ratio iframe {
+        border-radius: 10px;
+      }
+      .pagination .page-item .page-link {
+        background-color: #292929;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        margin: 0 5px;
+        transition: all 0.3s ease;
+      }
+      .pagination .page-item.active .page-link,
+      .pagination .page-item .page-link:hover {
+        background: gold;
+        color: white;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="intro-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-1 col-lg-2"></div>
+          <div class="col-md-10 col-lg-8">
+            <div class="intro">
+              <div class="profile-img">
+                <img src="images/profile.jpg" alt />
+              </div>
+              <h2><b>Muhammad Hammad</b></h2>
+              <h4 class="font-yellow">Software Engineer</h4>
+              <ul class="information margin-tb-30">
+                <li><b>BORN : </b>September 12, 2002</li>
+                <li>
+                  <b>EMAIL : </b>
+                  <a
+                    style="text-decoration: none"
+                    href="mailto:hammadmalikdx@gmail.com?subject=Subject%20of%20the%20email&body=Body%20of%20the%20email"
+                  >
+                    hammadmalikdx@gmail.com
+                  </a>
+                </li>
+
+                <li><b>Institute : </b>FAST NUCES</li>
+                <li><b>CGPA: </b>3.05</li>
+                <div class="download-button">
+                  <a
+                    href="https://drive.usercontent.google.com/u/1/uc?id=1KROXWPXVF9nKU0RkI1kVhdWHUEnGsRZH&export=download"
+                    download
+                    class="btn btn-primary"
+                    >Download CV</a
+                  >
+                </div>
+              </ul>
+              <ul class="social-icons">
+                <li>
+                  <a href="https://github.com/Muhammad-Hammad-Malik"
+                    ><i class="fa fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/muhammad-hammad-69aa36248/?originalSubdomain=pk"
+                    ><i class="ion-social-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/hammadmalik09/"
+                    ><i class="ion-social-instagram"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/muhammadhammad.malik.3"
+                    ><i class="ion-social-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UCilUO-VupwmjH9j1GgcHfVg"
+                    ><i class="ion-social-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid py-5 project-section">
+      <div class="heading">
+        <h3
+          style="
+            color: white;
+            font-weight: 1000;
+            text-align: center;
+            margin-bottom: 20px;
+          "
+        >
+          <b>My Projects</b>
+        </h3>
+      </div>
+      <div class="text-center mb-4">
+        <button
+          class="btn btn-outline-light mx-2 filter-btn"
+          data-filter="all"
+          onclick="filterProjects('all')"
+        >
+          All Projects
+        </button>
+        <button
+          class="btn btn-outline-light mx-2 filter-btn"
+          data-filter="web"
+          onclick="filterProjects('web')"
+        >
+          Web Projects
+        </button>
+        <button
+          class="btn btn-outline-light mx-2 filter-btn"
+          data-filter="game"
+          onclick="filterProjects('game')"
+        >
+          Game Projects
+        </button>
+        <button
+          class="btn btn-outline-light mx-2 filter-btn"
+          data-filter="ai"
+          onclick="filterProjects('ai')"
+        >
+          AI Projects
+        </button>
+        <button
+          class="btn btn-outline-light mx-2 filter-btn"
+          data-filter="mobile"
+          onclick="filterProjects('mobile')"
+        >
+          Mobile Projects
+        </button>
+      </div>
+
+      <div class="row" id="project-container">
+        <!-- Project Cards -->
+      </div>
+
+      <nav class="mt-4">
+        <ul class="pagination justify-content-center" id="pagination">
+          <!-- Pagination will be inserted dynamically -->
+        </ul>
+      </nav>
+    </section>
+
+    <script>
+      const projects = [
+        {
+          name: "Akhri Aramgah",
+          type: "web",
+          video: "https://www.youtube.com/embed/NX74zu52HP8",
+          description:
+            "A centrallized platform for funeral and graveyard booking and management",
+          tech: "React , Node , Flask , Python , Pytorch , Firebase",
+        },
+        {
+          name: "Game Baazi",
+          type: "web",
+          video: "https://www.youtube.com/embed/E0Rqdcfw2MQ",
+          description:
+            "A smart video game store featuring both user and admin side",
+          tech: "React , Node , SQL server",
+        },
+        {
+          name: "Phishing Detection",
+          type: "ai",
+          video: "https://www.youtube.com/embed/xGvHGCe5uzw",
+          description:
+            "A web application using AI to detect phishing emails and urls",
+          tech: "Python, TensorFlow , React , Node , Flask",
+        },
+        {
+          name: "Zombie Botnet Simulation",
+          type: "web",
+          video: "https://www.youtube.com/embed/iKsoh0VRA8Q",
+          description:
+            "Ecosystem of applications to simulate the creation and working of a botnet",
+          tech: "React , Node , Python , Unity",
+        },
+        {
+          name: "Facial Detection System",
+          type: "ai",
+          video: "https://www.youtube.com/embed/SyGsPKxt_dI",
+          description:
+            "An AI model trained on faces data to generate embeddings for facial recongition",
+          tech: "Python , Pytorch , Streamlit , Pickle",
+        },
+        {
+          name: "Insectigators",
+          type: "ai",
+          video: "https://www.youtube.com/embed/ciW1j8Ef81A",
+          description:
+            "An AI model to classify insects of 16 different categories and deployed using flask",
+          tech: "Python , Tensorflow , Flask",
+        },
+        {
+          name: "Honeybee Haven",
+          type: "web",
+          video: "https://www.youtube.com/embed/vlCnRo7-6FE",
+          description:
+            "An e-commerce marketplace for buyers and sellers of aggricultural products and services",
+          tech: "Java , Springboot , Thymeleaf , MySQL",
+        },
+        {
+          name: "Raston Realms",
+          type: "web",
+          video: "https://www.youtube.com/embed/p6aVxl1s7UI",
+          description:
+            "An application for a tour organizing company allowing online bookings",
+          tech: ".Net Core, C# , SQL server",
+        },
+        {
+          name: "Rang-e-Soon",
+          type: "web",
+          video: "https://www.youtube.com/embed/kgyRaGQXm4Y",
+          description:
+            "A react application for a static website for the soon valley to promote tourism in the area.",
+          tech: "React",
+        },
+        {
+          name: "Voting Application",
+          type: "web",
+          video: "https://streamable.com/e/cnohs9",
+          description:
+            "A voting application to help a company in policy making featuring both management and user roles.",
+          tech: "React , Node , MongoDB",
+        },
+        {
+          name: "Football Club Management System",
+          type: "web",
+          video: "https://www.youtube.com/embed/VbooJ4jFbtA",
+          description:
+            "An application featuring management and analyst roles to manage a football club",
+          tech: ".NET core , C# , SQL server",
+        },
+        {
+          name: "Peezious",
+          type: "mobile",
+          video: "https://www.youtube.com/embed/6Ea9StiFe_o",
+          description:
+            "Peezious features mobile applications for food delivery and inventory management/Order fulfilment",
+          tech: "Java , Andorid Studio , Firebase ",
+        },
+        {
+          name: "Gear Grit",
+          type: "game",
+          video: "https://www.youtube.com/embed/6uI9pQ1VH6Y",
+          description:
+            "A 3rd person cycling game featuring levels and a survival mode",
+          tech: "C# , Unity",
+        },
+        {
+          name: "3rd Person Shooter",
+          type: "game",
+          video: "https://www.youtube.com/embed/aqWXmd8Yrxs",
+          description:
+            "A 3rd person shooter game featuring smart enemies that target you",
+          tech: "C# , Unity",
+        },
+        {
+          name: "Survive",
+          type: "game",
+          video: "https://www.youtube.com/embed/hba4Ytnv3hQ",
+          description:
+            "A first person game based on the typical FPS survival shooter genre featuring both human and other enemies",
+          tech: "C# , Unity",
+        },
+        {
+          name: "Cook'em",
+          type: "game",
+          video: "https://www.youtube.com/embed/fFW_rDtsoCg",
+          description:
+            "A cooking simulator featuring cool graphics and order fulfilment",
+          tech: "C# , Unity",
+        },
+        {
+          name: "Snake 3d",
+          type: "game",
+          video: "https://www.youtube.com/embed/LEjXUA0KWEY",
+          description:
+            "A snake 3d game featuring a circular world and artifical gravity with pickups",
+          tech: "C# , Unity",
+        },
+        {
+          name: "Bird Smashers",
+          type: "game",
+          video: "https://www.youtube.com/embed/SUut1FCruwk",
+          description:
+            "A 2d game with a similar concept to the famous angry bird game",
+          tech: "C# , Unity",
+        },
+        {
+          name: "Foot Pong",
+          type: "game",
+          video: "https://www.youtube.com/embed/Tyjb3tohrH0",
+          description:
+            "A 2d game with a similar concept to ice hockey just with football",
+          tech: "C# , Unity",
+        },
+        {
+          name: "Pluck It",
+          type: "game",
+          video: "https://www.youtube.com/embed/v8-KgZZKXqw",
+          description:
+            "A 2d ice hockey game with an AI opponent and cool visuals",
+          tech: "C# , Unity",
+        },
+        {
+          name: "Fish Game",
+          type: "game",
+          video: "https://www.youtube.com/embed/s82N1eefn6o",
+          description:
+            "A 2d fish game where the goal is to eat coins to score points with a moving background",
+          tech: "Assembly Language",
+        },
+      ];
+
+      let currentPage = 1;
+      let filteredProjects = projects;
+
+      function displayProjects() {
+        const projectContainer = document.getElementById("project-container");
+        projectContainer.innerHTML = filteredProjects
+          .map(
+            (project) => `
+                <div class="col-md-4 mb-4 project-card-container" data-type="${project.type}">
+                    <div class="project-card">
+                        <h5 class="project-name">${project.name}</h5>
+                        <div class="ratio ratio-16x9">
+                            <iframe src="${project.video}" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <p class="mt-2">${project.description}</p>
+                        <h6 class ="tech">Technology Used:</h6>
+                        <p>${project.tech}</p>
+                    </div>
+                </div>
+            `
+          )
+          .join("");
+      }
+
+      function filterProjects(category) {
+        filteredProjects =
+          category === "all"
+            ? projects
+            : projects.filter((project) => project.type === category);
+        displayProjects();
+      }
+
+      displayProjects();
+    </script>
+
+    <section class="about-section section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="heading">
+              <h3><b>About me</b></h3>
+              <h6 class="font-lite-black"><b>PROFESSIONAL PATH</b></h6>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <p class="margin-b-50">
+              I’m a passionate software engineer who loves building things and
+              solving problems. My journey in development has taken me through
+              various technologies, from backend to frontend, AI, and beyond.
+              What excites me most is the process of learning and
+              adapting—diving into new challenges, picking up new tools, and
+              finding the best solutions. With graduation just around the
+              corner, I’m looking forward to starting my career in software
+              development. My portfolio reflects my love for coding and
+              creating, and I’m eager for opportunities to grow, collaborate,
+              and make an impact.
+            </p>
+            <div class="row">
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="radial-prog-area margin-b-30">
+                  <div class="radial-progress" data-prog-percent=".90">
+                    <div></div>
+                    <h6 class="progress-title">Problem Solving</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="radial-prog-area margin-b-30">
+                  <div class="radial-progress" data-prog-percent=".92">
+                    <div></div>
+                    <h6 class="progress-title">Web Development</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="radial-prog-area margin-b-30">
+                  <div class="radial-progress" data-prog-percent=".85">
+                    <div></div>
+                    <h6 class="progress-title">Game Development</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="radial-prog-area margin-b-50">
+                  <div class="radial-progress" data-prog-percent=".80">
+                    <div></div>
+                    <h6 class="progress-title">AI Development</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="experience-section section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="heading">
+              <h3><b>Work Experience</b></h3>
+              <h6 class="font-lite-black"><b>PREVIOUS JOBS</b></h6>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <!-- React Developer Internship at RevCloud -->
+            <div class="experience margin-b-50">
+              <h4><b>React Developer Intern</b></h4>
+              <h5 class="font-yellow"><b>REVCLOUD</b></h5>
+              <h6 class="margin-t-10">June 2024 - August 2024</h6>
+              <p class="font-semi-white margin-tb-30">
+                During my internship at RevCloud, I gained hands-on experience
+                in React.js development, working on real-world projects and
+                enhancing my front-end development skills. I collaborated with
+                senior developers to implement dynamic UI components and
+                optimize application performance.
+              </p>
+              <ul class="list margin-b-30">
+                <li>
+                  Gained deep understanding of React.js fundamentals and
+                  component-based architecture.
+                </li>
+                <li>
+                  Worked with hooks, state management (Redux/Context API), and
+                  API integrations.
+                </li>
+                <li>
+                  Learned best practices for responsive design and UI/UX
+                  optimization.
+                </li>
+                <li>
+                  Collaborated with developers using Git and Agile
+                  methodologies.
+                </li>
+                <li>
+                  Enhanced debugging and problem-solving skills by fixing
+                  real-world issues.
+                </li>
+                <li>
+                  Built interactive features that improved user experience and
+                  engagement.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Unity Game Developer Internship at Virtual Dive Studios -->
+            <div class="experience margin-b-50">
+              <h4><b>Intern Game Developer</b></h4>
+              <h5 class="font-yellow"><b>VIRTUAL DIVE STUDIOS</b></h5>
+              <h6 class="margin-t-10">JUNE 2023 - AUGUST 2023</h6>
+              <p class="font-semi-white margin-tb-30">
+                In my Unity game development internship, I spearheaded the
+                creation of immersive 3D and 2D games, showcasing expertise in
+                game mechanics and scripting. Collaborating seamlessly with a
+                cross-functional team, I utilized Unity3D and C# to deliver
+                polished gaming experiences. Through adept debugging, I played a
+                key role in overcoming challenges and contributing to the
+                successful development of captivating projects.
+              </p>
+              <ul class="list margin-b-30">
+                <li>Learned core principles of game development.</li>
+                <li>Learned how to build a game from scratch (Unity).</li>
+                <li>Familiarized myself with the Unity interface.</li>
+                <li>Completed multiple projects.</li>
+                <li>
+                  Achieved certification of successful internship completion.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="education-section section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="heading">
+              <h3><b>Education</b></h3>
+              <h6 class="font-lite-black"><b>ACADEMIC CAREER</b></h6>
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <div class="education-wrapper">
+              <div class="education margin-b-50">
+                <h4><b>BACHELORS DEGREE IN COMPUTER SCIENCES</b></h4>
+                <h5 class="font-yellow">
+                  <b>FAST NUCES,LAHORE</b>
+                </h5>
+                <h6 class="font-lite-black margin-t-10">
+                  EXPECTED GRADUATION IN 2025
+                </h6>
+                <p class="margin-tb-30">
+                  As a computer science student at FAST-NUCES, I immersed myself
+                  in a dynamic learning environment that fueled my passion for
+                  technology. Engaging in cutting-edge coursework and
+                  collaborative projects, I honed my problem-solving skills,
+                  embraced innovative approaches, and cultivated a solid
+                  foundation for tackling real-world challenges in the
+                  ever-evolving field of computer science.
+                </p>
+              </div>
+              <div class="education margin-b-50">
+                <h4><b>INTERMEDIATE IN SCIENCE(PRE-ENGINEERING)</b></h4>
+                <h5 class="font-yellow">
+                  <b>GOVERNMENT COLLEGE UNIVERSITY,LAHORE</b>
+                </h5>
+                <h6 class="font-lite-black margin-t-10">2019-2021</h6>
+                <p class="margin-tb-30">
+                  During my time as an FSc Pre-Engineering student at the
+                  prestigious Government College University (GCU) Lahore, I was
+                  immersed in the rich academic and cultural heritage that
+                  defines this legendary institution. The intellectually
+                  stimulating environment, coupled with rigorous coursework,
+                  fostered my curiosity and laid the groundwork for a solid
+                  understanding of science and engineering principles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Certifications Section -->
+    <section class="cert-section py-5">
+      <div class="container">
+        <div class="row">
+          <div class="heading">
+            <h3 style="text-align: center"><b>Certifications</b></h3>
+            <h6
+              style="text-align: center; margin-bottom: 20px"
+              class="font-lite-black"
+            >
+              <b>Certifications that validate my skillset</b>
+            </h6>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Meta Front-End Development -->
+          <div class="col-md-4">
+            <div class="cert-card p-4">
+              <h4 class="cert-heading">Meta Front-End Development</h4>
+              <p class="cert-provider">by Meta</p>
+              <ul class="cert-list text-start">
+                <li>Gained hands-on experience in React.js and JavaScript.</li>
+                <li>
+                  Learned responsive design principles and accessibility best
+                  practices.
+                </li>
+                <li>
+                  Worked with modern front-end tools like Bootstrap and Git.
+                </li>
+              </ul>
+              <a
+                href="https://coursera.org/meta-frontend-cert"
+                target="_blank"
+                class="cert-btn"
+                >Verify</a
+              >
+            </div>
+          </div>
+
+          <!-- Web Design for Everybody -->
+          <div class="col-md-4">
+            <div class="cert-card p-4">
+              <h4 class="cert-heading">Web Design for Everybody</h4>
+              <p class="cert-provider">by University of Michigan</p>
+              <ul class="cert-list text-start">
+                <li>
+                  Mastered HTML, CSS, and JavaScript for building interactive
+                  websites.
+                </li>
+                <li>
+                  Understood web accessibility and semantic HTML concepts.
+                </li>
+                <li>
+                  Created fully functional web pages with structured layouts.
+                </li>
+              </ul>
+              <a
+                href="https://www.coursera.org/account/accomplishments/specialization/PA6N3BPD7T6V"
+                target="_blank"
+                class="cert-btn"
+                >Verify</a
+              >
+            </div>
+          </div>
+
+          <!-- C# Programming for Unity -->
+          <div class="col-md-4">
+            <div class="cert-card p-4">
+              <h4 class="cert-heading">C# Programming for Unity</h4>
+              <p class="cert-provider">by University of Colorado</p>
+              <ul class="cert-list text-start">
+                <li>Developed strong C# fundamentals for game development.</li>
+                <li>Learned scripting for Unity game mechanics and physics.</li>
+                <li>Built interactive 2D and 3D game projects from scratch.</li>
+              </ul>
+              <a
+                href="https://www.coursera.org/account/accomplishments/specialization/GZLMED5K5TQG"
+                target="_blank"
+                class="cert-btn"
+                >Verify</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom CSS -->
+    <style>
+      .cert-section {
+        background-color: black;
+        color: white;
+      }
+
+      .cert-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .cert-subtitle {
+        font-size: 1.2rem;
+        color: #bbb;
+        margin-bottom: 2rem;
+      }
+
+      .cert-card {
+        background: #1a1a1a;
+        border-radius: 12px;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+      }
+
+      .cert-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+      }
+
+      .cert-heading {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #ffac04;
+        margin-bottom: 5px;
+      }
+
+      .cert-provider {
+        font-size: 1rem;
+        color: #bbb;
+        margin-bottom: 1rem;
+      }
+
+      .cert-list {
+        list-style-type: circle;
+        padding-left: 20px;
+        text-align: left;
+        font-size: 1rem;
+        margin-bottom: 1rem;
+      }
+
+      .cert-list li {
+        margin-bottom: 0.5rem;
+      }
+
+      .cert-btn {
+        display: inline-block;
+        background: #ffac04;
+        color: white;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: 0.3s;
+      }
+
+      .cert-btn:hover {
+        background: #e79b05f9;
+        color: white;
+      }
+    </style>
+
+    <script src="common-js/jquery-3.2.1.min.js"></script>
+    <script src="common-js/tether.min.js"></script>
+    <script src="common-js/bootstrap.js"></script>
+    <script src="common-js/isotope.pkgd.min.js"></script>
+    <script src="common-js/jquery.waypoints.min.js"></script>
+    <script src="common-js/progressbar.min.js"></script>
+    <script src="common-js/jquery.fluidbox.min.js"></script>
+    <script src="common-js/scripts.js"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317"
+      integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA=="
+      data-cf-beacon='{"rayId":"85e24cdcae165f3a","b":1,"version":"2024.2.4","token":"cd0b4b3a733644fc843ef0b185f98241"}'
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
